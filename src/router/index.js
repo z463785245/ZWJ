@@ -7,7 +7,7 @@ Vue.use(Router)
 
 
 const router = new Router({
-    mode:'history',
+    // mode:'history',
     linkExactActiveClass: 'active',
     // 指定滚动行为
     scrollBehavior(to, from, savedPosition){
@@ -28,8 +28,8 @@ const router = new Router({
 //全局前置守卫
 
 router.beforeEach((to, from, next) => {
-  const app = router.app
-  const store = app.$options.store
+  // const app = router.app
+  const store = router.app.$options.store
   const auth = store.state.auth
   const articleId = to.params.articleId
   // 当前用户
@@ -37,7 +37,7 @@ router.beforeEach((to, from, next) => {
   // 路由参数中的用户
   const paramUser = to.params.user
 
-  app.$message.hide()
+  // router.app.$message.hide()
 
   if (
     (auth && to.path.indexOf('/auth/') !== -1) ||
@@ -54,8 +54,8 @@ router.beforeEach((to, from, next) => {
 
 // 注册全局后置钩子
 router.afterEach((to, from) => {
-  const app = router.app
-  const store = app.$options.store
+  // const app = router.app
+  const store = router.app.$options.store
   // 获取目标页面路由参数里的 showMsg
   const showMsg = to.params.showMsg
 
@@ -63,10 +63,10 @@ router.afterEach((to, from) => {
     // showMsg 是一个字符时，使用它作为消息内容
     if (typeof showMsg === 'string') {
       // 显示消息提示
-      app.$message.show(showMsg)
+      router.app.$message.show(showMsg)
     } else {
       // 显示操作成功
-      app.$message.show('操作成功')
+      router.app.$message.show('操作成功')
     }
   }
 })

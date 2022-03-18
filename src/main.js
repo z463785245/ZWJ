@@ -20,6 +20,9 @@ import { mockArticles } from './mock/data'
 import ls from './utils/localStorage'
 import './mock'
 import axios from 'axios'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
 
 // 将 axios 添加到 Vue.prototype 上，使其在实例内部的所有组件中可用
 Vue.prototype.$axios = axios
@@ -28,6 +31,7 @@ Vue.prototype.$axios = axios
 // 使用插件
 Vue.use(VueSweetalert2)
 Vue.use(Message)
+Vue.use(ElementUI)
 
 // 设置 false 以阻止 Vue 在启动时生成生产提示
 Vue.config.productionTip = false

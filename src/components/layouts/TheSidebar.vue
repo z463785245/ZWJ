@@ -2,7 +2,7 @@
   <div class="col-md-3 side-bar">
       <div class="panel panel-default corner-radius sidebar-resources">
           <div class="panel-heading text-center">
-              <h3 class="panel-title">实战课程</h3>
+              <h3 class="panel-title">美美展示</h3>
           </div>
           <div class="panel-body">
             <Slider :slides="slides" v-slot="{ currentSlide }">
@@ -85,43 +85,43 @@ export default {
             //实战课程
             slides:[
                 {
-                    title: '《Laravel 入门教程 - 从零到部署上线》',
-                    img: 'https://cdn.learnku.com/uploads/banners/YpxKKNlSPdmwotO3u8An.jpg',
-                    link: 'https://learnku.com/laravel/t/3383/laravel-the-first-chinese-new-book-laravel-tutorial'
+                    title: '111',
+                    img: '',
+                    link: ''
                 },
                 {
-                    title: '《Laravel 进阶课程 - 从零构建论坛系统》',
-                    img: 'https://cdn.learnku.com/uploads/banners/iNanVVOXdnYQ6jRfMdWE.png',
-                    link: 'https://learnku.com/laravel/t/6592'
+                    title: '222',
+                    img: '',
+                    link: ''
                 },
                 {
-                    title: '《Laravel 教程实战高级 - 构架 API 服务器》',
-                    img: 'https://cdn.learnku.com/uploads/banners/tEd4GxhMp6VMh9e0hrUH.jpg',
-                    link: 'https://learnku.com/laravel/t/7657'
+                    title: '333',
+                    img: '',
+                    link: ''
                 }
             ],
             activeUsers : [], // 活跃用户
             horArticles : [], //最火文章
             resources:[
                 {
-                    title: 'Vue 官方教程',
-                    link: 'https://learnku.com/vuejs/v2/guide/',
+                    title: '官方1',
+                    link: '',
                 },
                 {
-                    title: 'Vuex 官方教程',
-                    link: 'https://vuex.vuejs.org/zh/',
+                    title: '官方2',
+                    link: '',
                 },
                 {
-                    title: 'Vue Router 官方教程',
-                    link: 'https://router.vuejs.org/zh-cn/',
+                    title: '官方3',
+                    link: '',
                 },
                 {
-                    title: 'Vue Loader 官方教程',
-                    link: 'https://vue-loader.vuejs.org/zh-cn/',
+                    title: '官方3',
+                    link: '',
                 },
                 {
-                    title: 'Vue 特有代码的风格指南',
-                    link: 'https://learnku.com/vuejs/v2/style-guide/',
+                    title: '风格指南',
+                    link: '',
                 }
             ]
         }

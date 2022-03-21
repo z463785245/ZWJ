@@ -49,17 +49,17 @@ export default {
   data() {
     return {
       logo: {
-        src: `${this.uploadsUrl}images/202101/26/48878/4NbpRGTbE3.png!large`,
-        title: 'Learnku Vue.js'
+        src: 'http://www.cm24.com.cn/themes/cm2020/public/images/index/1.gif',
+        title: '美美咨询'
       },
       navList: ['社区', '头条', '问答', '教程'],
       activeNavIndex: 0,
       showCollapseNav:false,
     }
   },
-  beforeCreate() {
-    this.uploadsUrl = 'https://cdn.learnku.com/uploads/'
-  },
+  // beforeCreate() {
+  //   this.uploadsUrl = 'https://cdn.learnku.com/uploads/'
+  // },
   methods:{
       changeNavIndex(index){
           this.activeNavIndex = index
